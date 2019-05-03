@@ -33,7 +33,7 @@
         "lodash": "^4.17.11",
         "npm": "^6.4.1",
         "popper.js": "^1.14.4",
-        "sshpk": "^1.15.1"
+        "sshpk": "^1.16.1"
     },
     "devDependencies": {
         "browser-sync": "2.24.5",

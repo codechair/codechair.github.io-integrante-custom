@@ -674,3 +674,48 @@ table of Contents
     color: inherit !important;
     text-decoration: underline !important;
 }
+
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.content-modal {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 60%;
+  height: 20vh;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal h1 {
+  font-size: 42px;
+}
